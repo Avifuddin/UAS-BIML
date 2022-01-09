@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<br>
+ <body style="background-color: #E9967A;">
+ <div class="div">
+<br>
+ <h2 style="text-align: center;"">Prediksi Rating Hotel</h2>
+ <form action = "{{ url_for('predict')}}" method = "POST">
+ <p> Masukin Harga Hotel <input type = "text" name =
+"HargaHotel" /> <input type = "submit" value = "OKE" /> </p>
+ </form>
+ <p> {{ prediction_text }}
+</p>
+ </div>
+ </body>
+<style>
+ .div {
+ width: 400px;
+ height: 200px;
+ padding: 50px;
+ border: 3px solid black;
+ margin: 0 auto;
+ }
+ </style>
+</html> 
